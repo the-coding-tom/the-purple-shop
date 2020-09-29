@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>&copy Purple Shop - 2020</title>
+    <link rel="icon" href="./icons/purple-shop-logo.png" type="image/png" sizes="16x16" />
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
 
     <style>
         body,
@@ -12,6 +14,8 @@
             height: 100%;
             padding: 0px;
             margin: 0px;
+            font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+            font-size: 14px;
         }
 
         main {
@@ -19,12 +23,12 @@
             background-color: #F2F3F7;
         }
 
-        header {
-            padding: 16px;
+        .header {
+            padding: 20px;
         }
 
         footer {
-            padding: 16px;
+            padding: 20px;
         }
 
         .flex {
@@ -47,13 +51,76 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        .flex-center-items-horizontal {
+            align-items: center;
+        }
+
+        .flex-to-right {
+            margin-left: auto;
+        }
+
+        .padding-bottom-20 {
+            padding-bottom: 20px;
+        }
+
+        .padding-left-20 {
+            padding-left: 20px;
+        }
+
+        .padding-right-20 {
+            padding-right: 20px;
+        }
+
+        .padding-top-16 {
+            padding-top: 16px;
+        }
+
+        .padding-bottom-16 {
+            padding-bottom: 16px;
+        }
+
+        .nav-item-padding {
+            padding: 12px 16px;
+        }
+
+        .no-focus-border:focus {
+            outline: none;
+        }
     </style>
 </head>
 
 <body class="flex flex-column">
     <header>
-        <div class="fixed-screen-width flex-center">dd</div>
-        <div class="fixed-screen-width flex-center">hh</div>
+        <div class="header" style="border-bottom: 1px solid rgba(0,0,0,.1);">
+            <div class="fixed-screen-width flex-center flex flex-row flex-center-items-horizontal">
+                <div class="website-logo flex flex-row flex-center-items-horizontal">
+                    <img style="height: 32px" src="./assets/images/logo.png" />
+                    <span style="font-style: italic; color: #a17daeb6;"><span
+                            style="font-style:normal; font-family: Brush Script MT, Brush Script Std, cursive; font-size: large; color: #a17dae;"><strong>Thepurpleshop</strong></span>.com</span>
+                </div>
+                <div class="long-product-search flex flex-row"
+                    style="margin-left: 40px; margin-right: 40px; flex-grow: 1; border: 1.5px solid #a17dae; border-radius: 50px; overflow: hidden;">
+                    <div class="flex flex-center-items-horizontal" style="padding-left: 16px"><i
+                            class="lni lni-search-alt" style="color: rgba(0,0,0,0.7)"></i></div>
+                    <input class="no-focus-border" type="text"
+                        style="flex-grow: 1; padding: 10px 8px; border-radius: 50px; border: 0px;"
+                        placeholder="Search - what are you looking for?" />
+                </div>
+                <div class="right-side-navigation flex-to-right flex flex-row">
+                    <div class="nav-item-padding">Sign In or Join Free</div>
+                    <div class="nav-item-padding"><i class="lni lni-delivery"></i>Orders</div>
+                    <div class="nav-item-padding"><i style="transform: scaleX(-1);" class="lni lni-cart"></i>Cart</div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="padding-bottom-16 padding-top-16 fixed-screen-width flex-center flex flex-row padding-right-20 padding-left-20">
+            <div><i class="lni lni-list"></i> Categories <i class="lni lni-chevron-down"></i></div>
+            <div style="margin-left: auto; padding-right: 16px;"> Change currency - USD <i
+                    class="lni lni-chevron-down"></i>
+            </div>
+        </div>
     </header>
     <main>
         <div class="fixed-screen-width flex-center">
