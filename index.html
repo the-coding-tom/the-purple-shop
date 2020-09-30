@@ -26,6 +26,7 @@
 
         .header {
             padding: 20px;
+            padding-right: 4px;
         }
 
         header {
@@ -80,6 +81,10 @@
             padding-right: 20px;
         }
 
+        .padding-right-4 {
+            padding-right: 4px;
+        }
+
         .padding-top-16 {
             padding-top: 16px;
         }
@@ -89,7 +94,7 @@
         }
 
         .nav-item-padding {
-            padding: 12px 6px;
+            padding: 12px 16px;
         }
 
         .no-focus-border:focus {
@@ -131,21 +136,47 @@
                 </div>
                 <div class="right-side-navigation flex-to-right flex flex-row">
                     <div class="nav-item-padding">
-                        <span>Login</span>
+                        <div style="display: flex; align-items: center; justify-content: center;">
+                            <img style="transform: scaleX(-1); width: 24px; margin-right: 16px;"
+                                src="./assets/images/user.svg" />
+                            <i style="
+              font-size: 8px;
+              color: rgba(0, 0, 0, 0.7);
+            " class="lni lni-chevron-down"></i>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: center; margin-top: 6px;">
+                            <span style="font-size: .87rem;">Login / Sign Up</span>
+                        </div>
                     </div>
                     <div class="nav-item-padding">
-                        <span>Orders</span>
+                        <div style="display: flex; align-items: center; justify-content: center;">
+                            <img style="transform: scaleX(-1); width: 24px;" src="./assets/images/bell.svg" />
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: center; margin-top: 6px;">
+                            <span style="font-size: .87rem;">Notifications</span>
+                        </div>
                     </div>
                     <div class="nav-item-padding">
-                        <span>My Cart</span>
-                        <i style="transform: scaleX(-1); font-size: 20px; vertical-align: middle;
-                        " class="lni lni-cart"></i>
+                        <div style="display: flex; align-items: center; justify-content: center;">
+                            <img style="transform: scaleX(-1); width: 24px;" src="./assets/images/price-tags.svg" />
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: center; margin-top: 6px;">
+                            <span style="font-size: .87rem;">My Orders</span>
+                        </div>
+                    </div>
+                    <div class="nav-item-padding">
+                        <div style="display: flex; align-items: center; justify-content: center;">
+                            <img style="transform: scaleX(-1); width: 24px;" src="./assets/images/shopping-cart.svg" />
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: center; margin-top: 6px;">
+                            <span style="font-size: .87rem;">My Shopping Cart</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div
-            class="padding-bottom-16 padding-top-16 fixed-screen-width flex-center flex flex-row padding-right-20 padding-left-20">
+            class="padding-bottom-16 padding-top-16 fixed-screen-width flex-center flex flex-row padding-right-4 padding-left-20">
             <div>
                 <i style="
               color: rgba(0, 0, 0, 0.5);
