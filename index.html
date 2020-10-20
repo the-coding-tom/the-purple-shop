@@ -1,214 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>&copy Purple Shop - 2020</title>
-    <link rel="icon" href="./icons/purple-shop-logo.png" type="image/png" sizes="16x16" />
+    <link
+      rel="icon"
+      href="./icons/purple-shop-logo.png"
+      type="image/png"
+      sizes="16x16"
+    />
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet" />
-
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <style>
-        body,
-        html {
-            height: 100%;
-            padding: 0px;
-            margin: 0px;
-            font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
-            font-size: 14px;
-            background-color: #f2f3f7;
-        }
+      body,
+      html {
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        font-size: 14px;
+        background-color: #f2f3f7;
+      }
 
-        main {
-            flex-grow: 1;
-            background-color: #f2f3f7;
-        }
+      main {
+        flex-grow: 1;
+        background-color: #f2f3f7;
+      }
 
-        .header {
-            padding: 20px;
-            padding-right: 4px;
-        }
+      .header {
+        padding: 20px;
+        padding-right: 4px;
+      }
 
-        header {
-            box-shadow: 2px 2px 3px rgba(0, 0, 0, .1);
-            margin-bottom: 10px;
-            background-color: white;
-        }
+      header {
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+        background-color: white;
+      }
 
-        footer {
-            padding: 20px;
-            background-color: white;
-        }
+      footer {
+        padding: 20px;
+        background-color: white;
+      }
 
-        .flex {
-            display: flex;
-        }
+      .flex {
+        display: flex;
+      }
 
-        .flex-column {
-            flex-direction: column;
-        }
+      .flex-column {
+        flex-direction: column;
+      }
 
-        .flex-row {
-            flex-direction: row;
-        }
+      .flex-row {
+        flex-direction: row;
+      }
 
-        .fixed-screen-width {
-            max-width: 1500px;
-        }
+      .fixed-screen-width {
+        max-width: 1500px;
+      }
 
-        .flex-center {
-            margin-left: auto;
-            margin-right: auto;
-        }
+      .flex-center {
+        margin-left: auto;
+        margin-right: auto;
+      }
 
-        .flex-center-items-horizontal {
-            align-items: center;
-        }
+      .flex-center-items-horizontal {
+        align-items: center;
+      }
 
-        .flex-to-right {
-            margin-left: auto;
-        }
+      .flex-to-right {
+        margin-left: auto;
+      }
 
-        .padding-bottom-20 {
-            padding-bottom: 20px;
-        }
+      .padding-bottom-20 {
+        padding-bottom: 20px;
+      }
 
-        .padding-left-20 {
-            padding-left: 20px;
-        }
+      .padding-left-20 {
+        padding-left: 20px;
+      }
 
-        .padding-right-20 {
-            padding-right: 20px;
-        }
+      .padding-right-20 {
+        padding-right: 20px;
+      }
 
-        .padding-right-4 {
-            padding-right: 4px;
-        }
+      .padding-right-4 {
+        padding-right: 4px;
+      }
 
-        .padding-top-16 {
-            padding-top: 16px;
-        }
+      .padding-top-16 {
+        padding-top: 16px;
+      }
 
-        .padding-bottom-16 {
-            padding-bottom: 16px;
-        }
+      .padding-bottom-16 {
+        padding-bottom: 16px;
+      }
 
-        .nav-item-padding {
-            padding: 12px 16px;
-        }
+      .nav-item-padding {
+        padding: 12px 16px;
+      }
 
-        .no-focus-border:focus {
-            outline: none;
-        }
+      .no-focus-border:focus {
+        outline: none;
+      }
+
+      .nav-item > a {
+        color: #333333 !important;
+      }
+
+      .card {
+        margin: 5px;
+      }
     </style>
-</head>
+  </head>
 
-<body class="flex flex-column">
+  <body class="flex flex-column">
     <header>
-        <div class="header" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1)">
-            <div class="fixed-screen-width flex-center flex flex-row flex-center-items-horizontal">
-                <div class="website-logo flex flex-row flex-center-items-horizontal">
-                    <img style="height: 32px" src="./assets/images/logo.png" />
-                    <span style="font-style: italic; color: #a17daeb6"><span style="
-                  font-style: normal;
-                  font-family: Brush Script MT, Brush Script Std, cursive;
-                  font-size: large;
-                  color: #a17dae;
-                "><strong>Thepurpleshop</strong></span>.com</span>
-                </div>
-                <div class="long-product-search flex flex-row" style="
+      <div class="header" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1)">
+        <div
+          class="fixed-screen-width flex-center flex flex-row flex-center-items-horizontal"
+        >
+          <div class="website-logo flex flex-row flex-center-items-horizontal">
+            <img style="height: 32px" src="./assets/images/logo.png" />
+            <span style="color: #a17daeb6"
+              ><span
+                style="font-style: normal; font-size: large; color: #a17dae"
+                ><strong>Thepurpleshop</strong></span
+              >.com</span
+            >
+          </div>
+          <div
+            class="long-product-search flex flex-row"
+            style="
               margin-left: 40px;
               margin-right: 40px;
               flex-grow: 1;
-              border: 1.5px solid #a17dae;
+              border: 1.5px solid #d3d5d7;
               border-radius: 50px;
               overflow: hidden;
-            ">
-                    <div class="flex flex-center-items-horizontal" style="padding-left: 16px">
-                        <i class="lni lni-search-alt" style="color: rgba(0, 0, 0, 0.7)"></i>
-                    </div>
-                    <input class="no-focus-border" type="text" style="
+            "
+          >
+            <div
+              class="flex flex-center-items-horizontal"
+              style="padding-left: 16px"
+            >
+              <i
+                class="lni lni-search-alt"
+                style="color: rgba(0, 0, 0, 0.7)"
+              ></i>
+            </div>
+            <input
+              class="no-focus-border"
+              type="text"
+              style="
                 flex-grow: 1;
                 padding: 10px 8px;
                 border-radius: 50px;
                 border: 0px;
-              " placeholder="Search - what are you looking for?" />
-                </div>
-                <div class="right-side-navigation flex-to-right flex flex-row">
-                    <div class="nav-item-padding">
-                        <div style="display: flex; align-items: center; justify-content: center;">
-                            <img style="transform: scaleX(-1); width: 24px; margin-right: 16px;"
-                                src="./assets/images/user.svg" />
-                            <i style="
-              font-size: 8px;
-              color: rgba(0, 0, 0, 0.7);
-            " class="lni lni-chevron-down"></i>
-                        </div>
-                        <div style="display: flex; align-items: center; justify-content: center; margin-top: 6px;">
-                            <span style="font-size: .87rem;">Login / Sign Up</span>
-                        </div>
-                    </div>
-                    <div class="nav-item-padding">
-                        <div style="display: flex; align-items: center; justify-content: center;">
-                            <img style="transform: scaleX(-1); width: 24px;" src="./assets/images/bell.svg" />
-                        </div>
-                        <div style="display: flex; align-items: center; justify-content: center; margin-top: 6px;">
-                            <span style="font-size: .87rem;">Notifications</span>
-                        </div>
-                    </div>
-                    <div class="nav-item-padding">
-                        <div style="display: flex; align-items: center; justify-content: center;">
-                            <img style="transform: scaleX(-1); width: 24px;" src="./assets/images/price-tags.svg" />
-                        </div>
-                        <div style="display: flex; align-items: center; justify-content: center; margin-top: 6px;">
-                            <span style="font-size: .87rem;">My Orders</span>
-                        </div>
-                    </div>
-                    <div class="nav-item-padding">
-                        <div style="display: flex; align-items: center; justify-content: center;">
-                            <img style="transform: scaleX(-1); width: 24px;" src="./assets/images/shopping-cart.svg" />
-                        </div>
-                        <div style="display: flex; align-items: center; justify-content: center; margin-top: 6px;">
-                            <span style="font-size: .87rem;">My Shopping Cart</span>
-                        </div>
-                    </div>
-                </div>
+              "
+              placeholder="Search - what are you looking for?"
+            />
+          </div>
+          <div class="right-side-navigation flex-to-right flex flex-row">
+            <div class="nav-item-padding">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <img
+                  style="transform: scaleX(-1); width: 24px; margin-right: 16px"
+                  src="./assets/images/user.svg"
+                />
+                <i
+                  style="font-size: 8px; color: rgba(0, 0, 0, 0.7)"
+                  class="lni lni-chevron-down"
+                ></i>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-top: 6px;
+                "
+              >
+                <span style="font-size: 0.87rem">Login / Sign Up</span>
+              </div>
             </div>
+            <!-- <div class="nav-item-padding nav-item">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <img
+                  style="transform: scaleX(-1); width: 24px"
+                  src="./assets/images/bell.svg"
+                />
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-top: 6px;
+                "
+              >
+                <span style="font-size: 0.87rem">Notifications</span>
+              </div>
+            </div> -->
+            <div class="nav-item-padding">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <img
+                  style="transform: scaleX(-1); width: 24px"
+                  src="./assets/images/price-tags.svg"
+                />
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-top: 6px;
+                "
+              >
+                <span style="font-size: 0.87rem">My Orders</span>
+              </div>
+            </div>
+            <div class="nav-item-padding">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <img
+                  style="transform: scaleX(-1); width: 24px"
+                  src="./assets/images/shopping-cart.svg"
+                />
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-top: 6px;
+                "
+              >
+                <span style="font-size: 0.87rem">My Shopping Cart</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div
-            class="padding-bottom-16 padding-top-16 fixed-screen-width flex-center flex flex-row padding-right-4 padding-left-20">
-            <div>
-                <i style="
+      </div>
+      <div
+        class="padding-bottom-16 padding-top-16 fixed-screen-width flex-center flex flex-row padding-right-4 padding-left-20"
+      >
+        <div>
+          <i
+            style="
               color: rgba(0, 0, 0, 0.5);
               font-size: 18px;
               vertical-align: middle;
-            " class="lni lni-list"></i>
-                <span style="margin: 8px;">Categories</span>
-                <i style="
-              font-size: 8px;
-              color: rgba(0, 0, 0, 0.7);
-            " class="lni lni-chevron-down"></i>
-            </div>
-            <div style="
+            "
+            class="lni lni-list"
+          ></i>
+          <span style="margin: 8px">Categories</span>
+          <i
+            style="font-size: 8px; color: rgba(0, 0, 0, 0.7)"
+            class="lni lni-chevron-down"
+          ></i>
+        </div>
+        <div
+          style="
             margin-left: auto;
             padding-right: 16px;
             color: rgba(0, 0, 0, 0.7);
-          ">
-                <span style="margin: 8px">English - USD</span><i style="font-size: 8px"
-                    class="lni lni-chevron-down"></i>
-            </div>
+          "
+        >
+          <span style="margin: 8px">English - USD</span
+          ><i style="font-size: 8px" class="lni lni-chevron-down"></i>
         </div>
+      </div>
     </header>
     <main>
-        <div class="fixed-screen-width flex-center">
-            <!--Add Main Page-->
+      <div
+        class="fixed-screen-width flex-center container"
+        style="padding: 24px 60px 40px 60px"
+      >
+        <!--Add Main Page-->
+        <div class="row" style="flex-wrap: nowrap">
+          <div class="">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <ul class="nav flex-column">
+                  <li
+                    class="nav-item d-flex justify-content-between align-items-center"
+                  >
+                    <a class="nav-link active" href="#">Consumer Electronics</a>
+                    <i
+                      style="font-size: 8px; color: rgba(0, 0, 0, 0.9)"
+                      class="lni lni-chevron-right"
+                    ></i>
+                  </li>
+                  <li
+                    class="nav-item d-flex justify-content-between align-items-center"
+                  >
+                    <a class="nav-link active" href="#"> Clothes and Shoes</a>
+                    <i
+                      style="font-size: 8px; color: rgba(0, 0, 0, 0.9)"
+                      class="lni lni-chevron-right"
+                    ></i>
+                  </li>
+                  <li
+                    class="nav-item d-flex justify-content-between align-items-center"
+                  >
+                    <a class="nav-link active" href="#">Home and Garden</a>
+                    <i
+                      style="font-size: 8px; color: rgba(0, 0, 0, 0.9)"
+                      class="lni lni-chevron-right"
+                    ></i>
+                  </li>
+                  <li
+                    class="nav-item d-flex justify-content-between align-items-center"
+                  >
+                    <a class="nav-link active" href="#">Machinery</a>
+                    <i
+                      style="font-size: 8px; color: rgba(0, 0, 0, 0.9)"
+                      class="lni lni-chevron-right"
+                    ></i>
+                  </li>
+                  <li
+                    class="nav-item d-flex justify-content-between align-items-center"
+                  >
+                    <a class="nav-link active" href="#">Beauty</a>
+                    <i
+                      style="font-size: 8px; color: rgba(0, 0, 0, 0.9)"
+                      class="lni lni-chevron-right"
+                    ></i>
+                  </li>
+                  <li
+                    class="nav-item d-flex justify-content-between align-items-center"
+                  >
+                    <a class="nav-link active" href="#"
+                      >Sports and Entertainment</a
+                    >
+                    <i
+                      style="font-size: 8px; color: rgba(0, 0, 0, 0.9)"
+                      class="lni lni-chevron-right"
+                    ></i>
+                  </li>
+                  <li
+                    class="nav-item d-flex justify-content-between align-items-center"
+                  >
+                    <a class="nav-link active" href="#">More Categories</a>
+                    <i
+                      style="font-size: 8px; color: rgba(0, 0, 0, 0.9)"
+                      class="lni lni-chevron-right"
+                    ></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class=""
+            style="
+              flex-grow: 1;
+              padding-left: 10px;
+              padding-right: 10px;
+              display: flex;
+              flex-wrap: wrap;
+            "
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://via.placeholder.com/300"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Samsung S10 Edge</h5>
+                <p class="card-text">
+                  GHc 1,400.00 <br />
+                  10 pieces in stock
+                </p>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://via.placeholder.com/300"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Samsung S10 Edge</h5>
+                <p class="card-text">
+                  GHc 1,400.00 <br />
+                  10 pieces in stock
+                </p>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://via.placeholder.com/300"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Samsung S10 Edge</h5>
+                <p class="card-text">
+                  GHc 1,400.00 <br />
+                  10 pieces in stock
+                </p>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://via.placeholder.com/300"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Samsung S10 Edge</h5>
+                <p class="card-text">
+                  GHc 1,400.00 <br />
+                  10 pieces in stock
+                </p>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://via.placeholder.com/300"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Samsung S10 Edge</h5>
+                <p class="card-text">
+                  GHc 1,400.00 <br />
+                  10 pieces in stock
+                </p>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://via.placeholder.com/300"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Samsung S10 Edge</h5>
+                <p class="card-text">
+                  GHc 1,400.00 <br />
+                  10 pieces in stock
+                </p>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
     <footer>
-        <div class="fixed-screen-width flex-center">
-            &copy Purple Market - 2020
-        </div>
+      <div class="fixed-screen-width flex-center">
+        &copy Purple Market - 2020
+      </div>
     </footer>
-</body>
-
+    <!--scripts-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
